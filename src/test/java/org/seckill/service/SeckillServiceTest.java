@@ -67,7 +67,7 @@ public class SeckillServiceTest {
     //集成测试代码完整逻辑,注意可重复执行 md5=f23a62c93f8cba0330c7952e8d9ef4f7
     @Test
     public void seckillLogic() throws Exception {
-        long id = 1000;
+        long id = 1001;
         Exposer exposer = seckillService.exportSeckillUrl(id);
         if (exposer.isExposed()) {
             logger.info("exposer={}", exposer);
